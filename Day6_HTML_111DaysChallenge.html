@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regestration form</title>
+</head>
+<body>
+    <h3>Regestration Form</h3>
+    <form action="/action.php">
+       
+        <input type="text" id="username" name="username" placeholder="Username" required><br>
+        <br>
+        <input type="password" name="password" id="password" placeholder="Password" required><br>
+
+        <h4>Select you class: </h4>
+        <label for="class XI">
+            <input type="radio" name="class" id="class XI"> Classs XI
+        </label><br>
+        <label for="class XII">
+            <input type="radio" name="class" id="class XII"> Classs XII
+        </label>
+        <br>
+
+        <h4>Interested Topic: </h4>
+        <input type="checkbox" name="Topic" id="Iot"> Iot<br>
+        <input type="checkbox" name="Topic" id="Iot"> AI<br>
+        <input type="checkbox" name="Topic" id="Iot"> Web<br>
+        <br>
+        <label for="feedback" ><textarea name="feedback" id="feedback" placeholder="Feel free to give us feedback" rows="6"></textarea></label>
+        <br><br>
+        <input type="submit" name="submit" id="submit">
+    </form>
+</body>
+</html>

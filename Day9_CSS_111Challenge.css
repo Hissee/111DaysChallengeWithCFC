@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 9: CSS Selectors</title>
+  <style>
+    /* Universal Selector */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Element Selector */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+    }
+
+    /* ID Selector */
+    #main-title {
+      color: #4CAF50;
+      text-align: center;
+    }
+
+    /* Class Selector */
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+
+    /* Grouping Selector */
+    h2, h3 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    /* Descendant Selector */
+    .container p {
+      color: #555;
+    }
+
+    /* Child Selector */
+    .container > ul > li {
+      margin-bottom: 5px;
+      color: darkblue;
+    }
+
+    /* Pseudo-Class Selector */
+    a:hover {
+      color: red;
+    }
+
+    /* Attribute Selector */
+    input[type="text"] {
+      border: 2px solid #4CAF50;
+      padding: 5px;
+    }
+
+    /* Inline style will override this! */
+    .important {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="main-title">Day 9: CSS Selectors in Action</h1>
+
+  <div class="container">
+    <h2 class="highlight">Welcome to My Page</h2>
+    <p>This is a paragraph inside the <code>.container</code> class.</p>
+
+    <ul>
+      <li>Item One</li>
+      <li>Item Two</li>
+    </ul>
+
+    <h3>Try Hovering This Link:</h3>
+    <a href="#">Hover me!</a>
+
+    <h3>Input Field:</h3>
+    <input type="text" placeholder="Type here...">
+
+    <p class="important" style="color: red;">Inline styles override everything!</p>
+  </div>
+
+</body>
+</html>

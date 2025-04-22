@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 9: CSS Selectors</title>
+  <style>
+    /* Reset + Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      padding: 40px;
+    }
+
+    /* Header */
+    #main-title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #2c7a7b;
+      margin-bottom: 30px;
+    }
+
+    /* Highlight Class */
+    .highlight {
+      background-color: #fff3cd;
+      padding: 10px 15px;
+      border-left: 5px solid #ffc107;
+      margin-bottom: 15px;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    /* Container */
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .container h2,
+    .container h3 {
+      margin-bottom: 10px;
+      color: #2d3748;
+    }
+
+    .container p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .container ul > li {
+      color: #3b82f6;
+      margin-bottom: 8px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #3182ce;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #e53e3e;
+    }
+
+    input[type="text"] {
+      padding: 8px 12px;
+      border: 2px solid #4CAF50;
+      border-radius: 5px;
+      margin-top: 8px;
+      font-size: 1rem;
+    }
+
+    .important {
+      background-color: #fff0f0;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="main-title">Day 9: CSS Selectors in Action</h1>
+
+  <div class="container">
+    <h2 class="highlight">Welcome to My Page</h2>
+
+    <p>This is a paragraph inside the <code>.container</code> class, styled with a descendant selector.</p>
+
+    <ul>
+      <li>Item One</li>
+      <li>Item Two</li>
+    </ul>
+
+    <h3>Try Hovering This Link:</h3>
+    <a href="#">Hover me!</a>
+
+    <h3>Input Field:</h3>
+    <input type="text" placeholder="Type here...">
+
+    <p class="important" style="color: red;">⚠️ Inline styles override external and internal CSS!</p>
+  </div>
+
+</body>
+</html>

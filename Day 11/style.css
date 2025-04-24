@@ -1,0 +1,97 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header layout using flex */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .nav {
+    flex: 1;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Logo */
+  #logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Search bar */
+  #search input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  /* Menu styling */
+  #menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  #menu li {
+    list-style: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  #menu li:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero section */
+  .hero {
+    background: url('https://images.unsplash.com/photo-1745330612709-74ad3afdfe00?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero .btn {
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .hero .btn:hover {
+    background-color: #444;
+  }
+  

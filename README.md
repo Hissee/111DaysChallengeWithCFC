@@ -1,1 +1,2 @@
 # 111DaysChallengeWithCFC
+In this challenge, I'll showcasing everything I'll be learnining in this 111 days. I've chosen Web Development as my stack for this challenge. I really appriciate Code For Change for starting this challenge. This has gave me motivation to mastry this stack. Hope I could complete this Challenge.

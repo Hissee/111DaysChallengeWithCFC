@@ -61,3 +61,33 @@ let div = document.querySelector("div");
 //     div.append(`the mouse was inside ${x} times`);
 // }
 
+
+//Create a toggle button that changes the screen to dark-mode when clicked 
+// and light-mode when clicked again
+
+let mode = document.querySelector("#dark");
+let body = document.querySelector("body");
+let curMode = "light";
+
+mode.addEventListener("click", () => {
+    if(curMode === "light"){
+        curMode = "dark";
+        body.classList.add('dark');
+        body.classList.remove('light');
+        
+        // document.querySelector("body").style.background = "#040d46e4";
+        // document.querySelector("body").style.color = "aliceblue";
+        
+    } else{
+        curMode = "light";
+        body.classList.add('light');
+        body.classList.remove('dark');
+
+        // document.querySelector("body").style.background = "aliceblue";
+        // document.querySelector("body").style.color = "#040d46e4";
+    }
+
+    console.log(curMode);
+})
+
+

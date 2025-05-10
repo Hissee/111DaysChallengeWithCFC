@@ -5,3 +5,21 @@ div{
     color: aliceblue;
     border: 1px solid black;
 }
+
+#dark{
+    padding: 5px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    background: #040d46e4;
+    border-radius: 15px;
+    border:2px solid rgb(234, 89, 79);
+}
+
+.dark{
+    color: aliceblue;
+    background-color: #040d46e4;
+}
+.light{
+    background-color: aliceblue;
+    color: #040d46e4;
+}
